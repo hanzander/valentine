@@ -4,10 +4,25 @@
   --text: #f0eeeb;
 }
 
+
 body {
   background-color: var(--background);
   color: var(--text);
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-image: url('hanaya.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  position: relative;
+  z-index: 1;
+  filter: none; /* Ensure the content is not blurred */
+}
+
+/* Optional: To make sure the content is visible over the blurred background */
+.center, .header, .block {
+  color: white; /* Adjust text color for better visibility */
 }
 
 @media (max-width: 768px) {
@@ -28,6 +43,8 @@ img {
   border-radius: 5%;
   margin-bottom: 1.5vh;
 }
+
+
 
 .header {
   margin-top: 1rem;
